@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assessment - START</title>
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+<body>
+<div class="container">
+    <div id="instructions" class="justify-center flex-column">
+        <h2>Test Instructions</h2>
+        <ol>
+            <li>You will need approximately 15 minutes to complete this assessment.</li>
+            <li>Read each statement carefully and be as honest as possible!</li>
+            <li>Score yourself based on actual observed behaviours, not what you think you should do or would desire to do.</li>
+            <li>Score each question from 1 (completely false) to 10 (completely true).</li>
+            <li>Don’t leave any questions blank!</li>
+        </ol>
+        <button id="start-button">Start Quiz</button>
+    </div>
+
+    <div id="quiz" class="justify-center flex-column" style="display: none;">
+        <div class="question-counter-container">
+            <p id="question-counter">Question 1 of 60</p>
+        </div>
+        <h2 id="question">Choose to the best of your ability</h2>
+        <div class="choices">
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text" data-number="1">1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text" data-number="2">2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text" data-number="3">3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text" data-number="4">4</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">E</p>
+                <p class="choice-text" data-number="5">5</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">F</p>
+                <p class="choice-text" data-number="6">6</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">G</p>
+                <p class="choice-text" data-number="7">7</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">H</p>
+                <p class="choice-text" data-number="8">8</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">I</p>
+                <p class="choice-text" data-number="9">9</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">J</p>
+                <p class="choice-text" data-number="10">10</p>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/quiz.js"></script>
+</body>
+</html>
