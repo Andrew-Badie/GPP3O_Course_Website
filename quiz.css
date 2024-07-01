@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f9fc;
+    background-color: #f0f4f8; /* Soft background color */
     color: #333;
     display: flex;
     justify-content: center;
@@ -26,17 +26,19 @@ body {
 #instructions, #quiz {
     width: 100%;
     max-width: 900px;
-    background-color: #fff;
-    padding: 15px;
+    background-color: #ffffff;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 2px solid #ffa07a; /* Light coral border */
 }
 
 h2 {
-    margin: 0 0 10px;
-    font-size: 22px;
-    color: #2c3e50;
+    margin: 0 0 20px;
+    font-size: 28px;
+    color: #ffa07a; /* Light coral */
+    font-weight: 700;
 }
 
 ol {
@@ -47,7 +49,17 @@ ol {
 }
 
 li {
-    margin-bottom: 8px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333;
+    padding: 10px;
+    background-color: #e0f7fa; /* Light cyan background */
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #b2ebf2; /* Light cyan hover */
 }
 
 .question-counter-container {
@@ -68,45 +80,45 @@ li {
 .choice-prefix {
     font-weight: bold;
     margin-right: 5px;
-    color: #2980b9;
+    color: #4caf50; /* Soft green */
 }
 
 .choice-text {
     flex: 1;
     text-align: center;
     padding: 10px;
-    border: 2px solid #2980b9;
+    border: 2px solid #4caf50; /* Soft green border */
     border-radius: 10px;
-    background-color: #ecf0f1;
+    background-color: #e8f5e9; /* Light green background */
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
     font-size: 14px;
-    color: #2980b9;
+    color: #4caf50; /* Soft green text */
 }
 
 .choice-text:hover {
-    background-color: #d1e8ff;
+    background-color: #c8e6c9; /* Lighter green on hover */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 button {
-    padding: 8px 16px;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #2980b9;
+    background-color: #64b5f6; /* Soft blue */
     color: #fff;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #1f639e;
+    background-color: #42a5f5; /* Slightly darker blue */
     transform: translateY(-2px);
 }
 
 button:active {
-    background-color: #15527d;
+    background-color: #1e88e5;
     transform: translateY(0);
 }
 
