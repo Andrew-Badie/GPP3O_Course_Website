@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const charScores = JSON.parse(localStorage.getItem('characterScores'));
     const skillScores = JSON.parse(localStorage.getItem('skillScores'));
 
-    const resultsContainer = document.getElementById('results');
+    const charScoresContainer = document.getElementById('characterScores').querySelector('tbody');
+    const skillScoresContainer = document.getElementById('skillScores').querySelector('tbody');
     const paragraphSection = document.getElementById('paragraph-section');
 
     const createScoreElement = (name, score) => {
@@ -20,41 +21,31 @@ document.addEventListener('DOMContentLoaded', () => {
     let highestSkillText = '';
 
     if (charScores) {
-        const charScoresDiv = document.createElement('div');
-        charScoresDiv.innerHTML = '<h2>Character Traits Scores</h2><table><thead><tr><th>Trait</th><th>Score</th><th>Percentage</th></tr></thead><tbody></tbody></table>';
-        const tbody = charScoresDiv.querySelector('tbody');
-
         let highestCharTrait = '';
         let highestCharScore = 0;
 
         for (let trait in charScores) {
-            tbody.innerHTML += createScoreElement(trait, charScores[trait]);
+            charScoresContainer.innerHTML += createScoreElement(trait, charScores[trait]);
             if (charScores[trait] > highestCharScore) {
                 highestCharScore = charScores[trait];
                 highestCharTrait = trait;
             }
         }
-        resultsContainer.appendChild(charScoresDiv);
 
         highestCharacterText = `Your highest character trait is ${highestCharTrait}, which indicates ${getCharacterDescription(highestCharTrait)}.`;
     }
 
     if (skillScores) {
-        const skillScoresDiv = document.createElement('div');
-        skillScoresDiv.innerHTML = '<h2>Skills Scores</h2><table><thead><tr><th>Skill</th><th>Score</th><th>Percentage</th></tr></thead><tbody></tbody></table>';
-        const tbody = skillScoresDiv.querySelector('tbody');
-
         let highestSkill = '';
         let highestSkillScore = 0;
 
         for (let skill in skillScores) {
-            tbody.innerHTML += createScoreElement(skill, skillScores[skill]);
+            skillScoresContainer.innerHTML += createScoreElement(skill, skillScores[skill]);
             if (skillScores[skill] > highestSkillScore) {
                 highestSkillScore = skillScores[skill];
                 highestSkill = skill;
             }
         }
-        resultsContainer.appendChild(skillScoresDiv);
 
         highestSkillText = `Your highest skill is ${highestSkill}, which indicates ${getSkillDescription(highestSkill)}.`;
     }
