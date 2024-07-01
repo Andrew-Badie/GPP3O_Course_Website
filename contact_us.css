@@ -1,0 +1,62 @@
+.contact-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4a90e2;
+    margin-bottom: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.contact-card {
+    background-color: #f9f9f9;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.contact-card h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.contact-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact-card a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
+
+.contact-image {
+    max-width: 100px;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:nth-child(odd) .contact-image {
+    order: 1;
+}
+
+.contact-card:nth-child(even) .contact-image {
+    order: 0;
+}
