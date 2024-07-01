@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Assessment Results - SaLT Program</title>
     <link rel="stylesheet" href="results.css">
-    <link rel="stylesheet" href="quiz.css">
 </head>
 <body>
 <header>
@@ -15,31 +13,37 @@
     <nav>
         <ul>
             <li><a href="homepage.html">Home</a></li>
-            <li><a href="course.html">Course Details</a></li>
-            <li><a href="quiz.html">Quiz</a></li>
         </ul>
     </nav>
 </header>
 <main>
     <div class="container">
         <h1>Assessment Results</h1>
-        <div id="results" class="results">
+        <div class="results">
             <div id="characterScores" class="results-section">
-                <!-- Character scores will be inserted here -->
+                <h2>Character Traits Scores</h2>
+                <table>
+                    <thead>
+                        <tr><th>Trait</th><th>Score</th><th>Percentage</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
             <div id="skillScores" class="results-section">
-                <!-- Skills scores will be inserted here -->
-            </div>
-            <div id="highestScores" class="results-section">
-                <!-- Highest scores paragraphs will be inserted here -->
+                <h2>Skills Scores</h2>
+                <table>
+                    <thead>
+                        <tr><th>Skill</th><th>Score</th><th>Percentage</th></tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
             </div>
         </div>
         <div id="paragraph-section" class="paragraph-section">
-            <!-- Highest character and skill paragraphs will be inserted here -->
-        </div>
-        <div id="bottom-section">
             <p id="highestCharacter"></p>
             <p id="highestSkill"></p>
+        </div>
+        <div id="bottom-section">
             <a class="btn" href="homepage.html">Retake Quiz</a>
         </div>
     </div>
