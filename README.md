@@ -1,6 +1,6 @@
 # GPP3O Leadership Course Website
 
-A website I built in 2024 for an Ontario Grade 11 Leadership and Peer Support course (GPP3O). It was used as a course resource for a class of **15 students**.
+A website I delivered in 2024 for an Ontario Grade 11 Leadership and Peer Support course (GPP3O). It was used as a course resource for a class of **15 students**.
 
 The goal of the project was to give students one place to access course information, view important dates, complete a leadership quiz, and find contact information.
 
@@ -48,6 +48,6 @@ Then open `index.html` in a web browser. No additional setup is required.
 
 ## What I worked on
 
-I developed the site using JavaScript, HTML, and CSS and organized the course content into separate pages so students could navigate between the course material, calendar, quiz, results, and contact information.
+I organized the course content into separate pages so students could navigate between the course material, calendar, quiz, results, and contact information, then deployed and used the site as part of the class.
 
-This project was created for a real course setting rather than as a standalone coding exercise, which gave me experience building software around the needs of actual users.
+This project was created for a real course setting rather than as a standalone coding exercise, which gave me experience delivering software around the needs of actual users.
