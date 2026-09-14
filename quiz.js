@@ -98,7 +98,7 @@ function getNewQuestion() {
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
-        choice.innerText = currentQuestion["choice" + number];
+        choice.innerText = number;
     });
 
     acceptingAnswers = true;
